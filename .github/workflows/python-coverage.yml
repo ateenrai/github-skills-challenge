@@ -29,9 +29,9 @@ jobs:
           pip install pytest-cov==6.2.1
 
       - name: Run tests and generate coverage details
-          run: |
-            python -m coverage run --source=src -m pytest -v
-            python -m coverage report
+        run: |
+          python -m coverage run --source=src -m pytest -v
+          python -m coverage report
 
       - name: Coverage comment
         uses: py-cov-action/python-coverage-comment-action@v3
